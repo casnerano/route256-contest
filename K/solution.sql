@@ -1,0 +1,1 @@
+select id, name from users where exists (select id from orders where users.id = orders.user_id) order by name, id
